@@ -3,9 +3,9 @@ import { Link, routes } from '@redwoodjs/router'
 const BlogLayout = ({ children }) => {
   return (
     <>
-      <header>
-        <h1>
-        <Link to={routes.home()}>HTMLiens</Link>
+      <header className='nav'>
+        <h1 className='title'>
+        <Link to={routes.home()}><span class="title">HTMLiens</span></Link>
         </h1>
         <nav>
           <ul>

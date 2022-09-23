@@ -1,6 +1,52 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import "https://unpkg.com/open-props/buttons.min.css";
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,800;1,300&display=swap');
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'JetBrains Mono', monospace;
+  /* background-image: var(--gradient-4); */
 }
+
+header{
+  /* padding: var(--size-4); */
+  /* background-image: var(--gradient-20); */
+  margin-bottom: var(--size-4);
+  @media (--OSdark) {
+    background-image: var(--gradient-15);
+  }
+}
+
+.nav{
+  padding: var(--size-4);
+}
+
+.title{
+  /* color: var(--gray-9); */
+}
+
+article{
+  width: 90%;
+  margin: var(--size-6) auto;
+  border: var(--size-1) dashed var(--grape-7);
+  border-radius: var(--radius-3);
+  padding: var(--size-4);
+  max-width: 900px;
+  box-shadow: var(--size-1) var(--size-2) var(--grape-7);
+  transition: 0.8s ease-in-out;
+}
+
+h2{
+  color: var(--grape-7);
+}
+
+.posted{
+  margin-top: var(--size-4);
+  color: var(--grape-2);
+}
+
+
 ul {
   list-style-type: none;
   margin: 1rem 0;
@@ -10,9 +56,19 @@ li {
   display: inline-block;
   margin: 0 1rem 0 0 ;
 }
+
+a:hover{
+  border-bottom: var(--border-size-2) dashed var(--gray-9) ;
+}
+
+
+
+
+
 h1 > a {
   text-decoration: none;
   color: black;
+
 }
 button, input, label, textarea {
   display: block;
@@ -47,4 +103,17 @@ input.error, textarea.error {
 }
 .flex-between button {
   display: inline;
+}
+
+
+@media (--OSdark){
+  h1, h2{
+    color: var(--grape-2);
+  }
+
+
+  article{
+    border: var(--grape-2);
+  }
+
 }
