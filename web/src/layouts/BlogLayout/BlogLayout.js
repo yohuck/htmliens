@@ -3,9 +3,11 @@ import { Link, routes } from '@redwoodjs/router'
 const BlogLayout = ({ children }) => {
   return (
     <>
-      <header className='nav'>
-        <h1 className='title'>
-        <Link to={routes.home()}><span class="title">HTMLiens</span></Link>
+      <header className="nav">
+        <h1 className="title">
+        <Link to={routes.home()}>
+          <span className="title">HTMLiens</span>
+        </Link>
         </h1>
         <nav>
           <ul>
@@ -14,6 +16,9 @@ const BlogLayout = ({ children }) => {
             </li>
             <li>
               <Link to={routes.about()}>About</Link>
+            </li>
+            <li>
+              <Link to={routes.contact()}>Contact</Link>
             </li>
           </ul>
         </nav>
