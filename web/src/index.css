@@ -83,6 +83,10 @@ a:hover, {
   border-bottom: var(--border-size-2) dashed var(--gray-9) ;
 }
 
+.login{
+  font-size: var(--size-2);
+}
+
 
 
 
