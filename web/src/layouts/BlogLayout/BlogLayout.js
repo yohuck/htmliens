@@ -5,7 +5,7 @@ const BlogLayout = ({ children }) => {
     <>
       <header className="nav">
         <h1 className="title">
-        <Link to={routes.home()}>
+          <Link to={routes.home()}>
           <span className="title">HTMLiens</span>
         </Link>
         </h1>

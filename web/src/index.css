@@ -34,8 +34,30 @@ article{
   padding: var(--size-4);
   max-width: 900px;
   box-shadow: var(--size-1) var(--size-2) var(--grape-7);
-  transition: 0.8s ease-in-out;
+  /* transition: 0.8s ease-in-out; */
 }
+
+.contact{
+  border: var(--size-1) dashed var(--grape-7);
+  border-radius: var(--radius-3);
+  padding: var(--size-4);
+  box-shadow: var(--size-1) var(--size-2) var(--grape-7);
+}
+
+form{
+  color: var(--grape-7);
+}
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact button{
+  margin-top: var(--size-2);
+}
+
+
 
 h2{
   color: var(--grape-7);
@@ -57,9 +79,10 @@ li {
   margin: 0 1rem 0 0 ;
 }
 
-a:hover{
+a:hover, {
   border-bottom: var(--border-size-2) dashed var(--gray-9) ;
 }
+
 
 
 
